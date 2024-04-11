@@ -10,7 +10,7 @@ function SideNav() {
       
       {" "}
       <div>
-        {isTrue ? (<div className=" sidenav w-[100vw]   h-screen  fixed">
+        {!isTrue && (<div className=" sidenav w-[100vw]   h-screen  fixed">
           <div className=" w-72 h-screen bg-zinc-900 text-white mt-11  fixed ">
           <div className="border-b-[1px] mx-3 px-4 py-5 ">Home</div>
           <div className="border-b-[1px] mx-3 px-4 py-5 ">Your Channel</div>
@@ -25,7 +25,7 @@ function SideNav() {
 
         
         
-      ) : null}
+      ) }
        
       </div>
     </div>
