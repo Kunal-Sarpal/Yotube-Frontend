@@ -12,7 +12,7 @@ function Navbar() {
     <div className="text-white flex justify-between items-center px-3 fixed w-full bg-zinc-900 top-0 ">
       <div className="text-lg md:text-2xl font-semibold flex items-center justify-center gap-1 rounded-xl tracking-tighter ">
         <div className="text-red-600 flex  text-2xl mt-1 md:text-3xl ">
-<AiOutlineMenu className="text-white mr-5 text-xl mt-[5px]" onClick={()=>{
+<AiOutlineMenu className="text-white mr-5 text-xl mt-[2px] lg:mt-[4px]" onClick={()=>{
     setTrue(!isTrue);
    
 }}/>
