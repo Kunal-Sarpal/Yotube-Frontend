@@ -1,4 +1,4 @@
-import { FaYoutube } from "react-icons/fa6";
+
 function Search() {
   return (
     <>

@@ -1,0 +1,7 @@
+.sidenav{
+    backdrop-filter: blur(3px);
+    transition: all 2s linear infinite ease-in-out;
+    position: fixed;
+
+}
+/* @keyframes animate */

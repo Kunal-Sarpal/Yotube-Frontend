@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import Search from "./Search";
 import { FaRegUserCircle } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { RiFindReplaceLine } from "react-icons/ri";
+import { AiOutlineMenu } from "react-icons/ai";
+import { CreateContext } from "../context";
 
 function Navbar() {
+    const {isTrue,setTrue} = useContext(CreateContext);
   return (
-    <div className="text-white flex justify-between items-center px-3 fixed w-full bg-zinc-900 top-0">
+    <div className="text-white flex justify-between items-center px-3 fixed w-full bg-zinc-900 top-0 ">
       <div className="text-lg md:text-2xl font-semibold flex items-center justify-center gap-1 rounded-xl tracking-tighter ">
-        <div className="text-red-600 flex  text-2xl mt-1 md:text-3xl">
+        <div className="text-red-600 flex  text-2xl mt-1 md:text-3xl ">
+<AiOutlineMenu className="text-white mr-5 text-xl mt-[5px]" onClick={()=>{
+    setTrue(!isTrue);
+   
+}}/>
           <FaYoutube className="" />
         </div>
         <h1 className=" font-normal tracking-[-2px]">YouTube</h1>
